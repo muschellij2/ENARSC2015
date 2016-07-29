@@ -1,0 +1,17 @@
+base
+knitr
+rgl
+misc3d
+oro.nifti
+brainR
+scales
+oro.dicom
+stringr
+matrixStats
+fslr
+ENARSC2015
+xtable
+plyr
+R.matlab
+fastICA
+AnalyzeFMRI

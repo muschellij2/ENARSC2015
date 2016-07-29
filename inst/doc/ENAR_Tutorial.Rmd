@@ -1,0 +1,340 @@
+---
+title: "ENAR Tutorial 2015"
+author: "John Muschelli, Elizabeth Sweeney"
+date: '`r Sys.Date()`'
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{ENAR Tutorial}
+  % \VignetteDepends{xtable, scales, brainR}
+output:
+  knitr:::html_vignette:
+    toc: yes  
+---
+
+```{r knit-setup, echo=FALSE, results='hide', eval=TRUE}
+rm(list=ls())
+library(knitr)
+enar_dir = '~/ENARSC2015'
+enar_dir = Sys.readlink(enar_dir)
+opts_chunk$set(comment="")
+# cache.path <- path.expand(file.path(enar_dir, "/vignettes/tutorial_cache/"))
+# opts_chunk$set(cache.path=cache.path)
+```
+
+Load in the required libraries.  If you do not have these libraries installed, please install them by using the command install.packages()
+
+```{r}
+## library(fslr)
+library(rgl)
+library(misc3d)
+library(brainR)
+library(scales)
+library(ENARSC2015)
+library(brainR)
+library(xtable)
+library(plyr)
+```
+
+
+Now we will read in the data.  First we read in the data from a subject at the baseline visit. 
+
+```{r kki_readin}
+
+##Baseline data##
+enar_dir = system.file(package="ENARSC2015")
+mridir = file.path(enar_dir, "Kirby21")
+MPRAGE_base <- readNIfTI(
+  file.path(mridir, 'SUBJ0001-01-MPRAGE.nii.gz'), 
+  reorient=FALSE)
+```
+
+We also load in a mask of the brain tissue from the baseline. 
+
+```{r}
+mask <- readNIfTI(
+  file.path(mridir, 'SUBJ0001_mask.nii.gz'), 
+  reorient = FALSE)
+```
+  
+And now we load data from a follow-up visit.
+
+```{r}
+MPRAGE_follow <- readNIfTI(
+  file.path(mridir, 'SUBJ0001-02-MPRAGE.nii.gz'),
+  reorient=FALSE)
+```
+
+Find the dimmension of both of the images
+```{r}
+dim(MPRAGE_base)
+dim(MPRAGE_follow)
+```
+
+Now we will plot the data 
+
+```{r kki_plotimage, cache=TRUE}
+##axial slice##
+image(MPRAGE_base[,,128])
+image(MPRAGE_base, z = 128, plot.type = "single")
+image(mask[,,128])
+
+##coronal slice##
+image(MPRAGE_base[,128,], col = rainbow(12))
+image(MPRAGE_base[,128,], col = gray(0:64/64))
+
+##sagittal slice##
+image(MPRAGE_base[85,,], col = topo.colors(12))
+image(MPRAGE_base[85,,], col = gray(0:64/64))
+```
+
+We again plot the data, now using the orthographic function (from oro.nifti package)
+
+```{r} 
+orthographic(MPRAGE_base)
+orthographic(MPRAGE_base, xyz = c(90, 100, 15))
+```
+
+We can calculate statistics over the mask 
+
+```{r}
+mean(MPRAGE_base[mask == 1])
+sd(MPRAGE_base[mask ==1])
+```
+
+
+We now wish to subtract followup image from the baseline image (to assess any changes between the two visits)
+
+```{r}
+MPRAGE_diff <- MPRAGE_base - MPRAGE_follow
+image(MPRAGE_diff[,,128])
+```
+
+That didn't work out very well... We need to do some pre-processing in order to get a meaningful difference between the two images.  Let's return to the presentaito to learn how to do this. 
+
+
+
+Load in the N3 corrected baseline image
+```{r}
+MPRAGE_base_n3 <- readNIfTI(
+  file.path(mridir, 'SUBJ0001-01-MPRAGE_N3.nii.gz'),
+  reorient=FALSE)
+```  
+
+Load in the N3 corrected and registered to baseline followup image
+```{r}
+MPRAGE_follow_n3_reg_base <- readNIfTI(
+  file.path(mridir, 'SUBJ0001-02-MPRAGE_N3_REG.nii.gz'),
+  reorient=FALSE)
+```
+
+
+  
+Explore the nifti object in R
+```{r kki_imginfo}
+MPRAGE_base
+slotNames(MPRAGE_base)
+```
+
+
+Now we can subtract the two images 
+```{r kki_imgdiff, cache=TRUE}
+difference <- MPRAGE_follow_n3_reg_base - MPRAGE_base 
+class(difference)
+difference = niftiarr(MPRAGE_follow_n3_reg_base, difference)
+image(difference[,,128])
+image(difference, z= 128, plot.type="single")
+```
+
+Downsample and plot intensities from the N3 corrected image versus the 
+intensities of the original image 
+
+```{r kki_n3vsOrig, cache=TRUE}
+sample <- sample(1:sum(mask), 4000, replace = FALSE)
+
+plot(MPRAGE_base[mask ==1][sample], MPRAGE_base_n3[mask == 1][sample], 
+     main = "N3 Corrected Intensities", xlab = "Raw MPRAGE Intensities", 
+     ylab = "N3 Corrected Intensities", pch = 20)
+abline(0,1,lty = 2, col = "red") 
+```
+
+Downsample and plot intensities from the baseline image versus the 
+follow up image 
+
+```{r}
+plot(MPRAGE_base_n3[mask ==1][sample], MPRAGE_follow_n3_reg_base[mask == 1]
+     [sample], main = "Registered Image", xlab = "Baseline", 
+     ylab = "Follow Up", pch = 20)
+abline(0,1,lty = 2, col = "red") 
+```
+
+
+We will now do some template based analysis. First, read in the template brain and plot it. 
+
+```{r kki_rglexample, cache=TRUE}
+template <- readNIfTI(
+  file.path(enar_dir, "Template", "MNI152_T1_2mm_brain.nii.gz"), 
+  reorient=FALSE)
+orthographic(template)
+```
+
+We can also plot the template in 3d with an ROI 
+```{r}
+cut <- 4500
+dtemp <- dim(template)
+contour3d(template, x=1:dtemp[1], y=1:dtemp[2], z=1:dtemp[3], level = cut,
+          alpha = 0.1, draw = TRUE, color="black")
+
+text3d(x=dtemp[1]/2, y=dtemp[2]/2, z = dtemp[3]*0.98, text="Top")
+text3d(x=-1, y=dtemp[2]/2, z = dtemp[3]/2, text="Right")
+
+roi = cal_img(template > 8100)
+contour3d(roi, x=1:dtemp[1], y=1:dtemp[2], z=1:dtemp[3], level = .99,
+          alpha = 0.5, draw = TRUE, add=TRUE, color = "red")
+index <- writeWebGL_split(
+  dir=file.path(getwd(), "WebGL"), 
+  width=700, height=500, 
+  template= system.file("my_template.html", package="brainR"))
+
+```
+
+Another useful command is to apply a Gaussian Blur to the image using the package Analyze FMRI
+
+```{r, kki_blur, cache=TRUE}
+
+library(AnalyzeFMRI)
+sigma.smooth<-diag(3,3)
+k.size<- 7
+MPRAGE_base_smoothed <-GaussSmoothArray(MPRAGE_base,sigma=sigma.smooth,
+                                        ksize=k.size,mask=mask)
+```
+
+Plot the image in R 
+
+```{r}
+orthographic(MPRAGE_base_smoothed)
+orthographic(MPRAGE_base * mask)
+```
+
+We can also write the smoothed image 
+```{r}
+writeNIfTI(MPRAGE_base_smoothed, filename = 
+             "MPRAGE_base_smoothed", verbose = TRUE, gzipped = TRUE)
+```
+
+
+In the `fsl_pipeline` vignettes, we analyzed MRI images of a person with a brain tumor from OsiriX (BRAINIX) [http://www.osirix-viewer.com/datasets/](http://www.osirix-viewer.com/datasets/).  Here, we will create a table of areas the brain tumor engaged.
+
+The following code grabs the images from the fsl_pipeling
+
+```{r n3_compare, cache=FALSE, results = 'hide'}
+ext = ".nii.gz"
+mods = c("T1", "T2", "FLAIR")
+pipes = c("FSL", "ANTsR")
+
+filedir = system.file("FSL", package="ENARSC2015")
+
+# 
+# n3.files = file.path(filedir, 
+#                      paste0(mods, "_FSL_N3Correct", ext))
+# ex = file.exists(n3.files)
+# stopifnot(all(ex))  
+# names(n3.files) = mods
+# 
+# n3.imgs = lapply(n3.files, readNIfTI, reorient=FALSE)
+
+```
+
+## Read in Registered Images
+
+We will read in the FLAIR and ROI that have been warped (non-linearly using FNIRT) to the template.  As interpolation is used in the warping, the ROI is not a binary image when warped.  We thresholded the warped ROI to be > 0.5.
+
+```{r reg_compare, cache=TRUE, results='hide'}
+reg.files = c(FLAIR = file.path(filedir, paste0("FLAIR_FSL_N3Correct_regMNI_FNIRT", ext)), 
+          ROI = file.path(filedir, paste0("ROI_threshold_regMNI_FNIRT", ext)))
+          
+
+reg.imgs = lapply(reg.files, readNIfTI, reorient=FALSE)
+
+```
+
+Let us overlay the warped FLAIR and overlaid ROI.  The `alpha` command comes from the `scales` package.
+
+```{r plot_reg, cache=TRUE}
+
+fslROI = reg.imgs$ROI
+fslROI[ fslROI == 0 ] = NA
+orthographic(reg.imgs$FLAIR, fslROI,
+             col.y=  alpha("red", .25),             
+             text = "Registered FLAIR \n FSL FNIRT")
+```
+
+
+To the Atlas!
+
+In `Atlas_Labels` we have the Harvard-Oxford Subcortical Atlas and a `data.frame` of labels for areas.   We will create a list, one for each label (e.g. Putamen) with the indices of the image that correspond to that label/area.
+
+```{r atlas_list, cache=TRUE, results='hide'}
+### Getting Harvard-Oxford Subcortical Atlas
+data(Atlas_Labels)
+
+### returns a list of indices from the template which match a certiain label
+get.ind = function(img, df){
+  df = df[order(df$index),]
+  ind.list = llply(df$index, function(x){
+  	return(which(img %in% x))
+	}, .progress = "text")
+	names(ind.list) = df$Label
+	return(ind.list)
+}
+
+hoxsubcort.list = get.ind(hoxsubcort.img, hoxsubcort.df)
+```
+
+With this list, we will create a table of overlap for the ROI.  The script below will go through each set of indices, grab those indices from the ROI image, and take the sum.  In this case, as the ROI is binary, this will represent the number of voxels that are a 1 in these areas.  We will take the voxel dimensions (`pixdim`) to convert the number of voxels into cubic centimeters for a real-life volume estimate of engagement.
+
+```{r atlas_breakdown, cache=TRUE, results='hide'}
+### in each area, takes the sum of an image (in this case the ROI)
+tab.area = function(img, ind.list, keepall = FALSE) {
+  ## get overlap of indices
+  raw.mat = sapply(ind.list, function(x) sum(img[x]))
+  names(raw.mat) = names(ind.list)
+  ## cs is sum of indices of overlap
+  cs.raw = data.frame(N_Voxels=raw.mat) 
+  rownames(cs.raw) = names(ind.list)
+  if (!keepall) cs.raw = cs.raw[cs.raw != 0, , drop=FALSE]
+  return(cs.raw)
+}
+
+fslROI = reg.imgs$ROI
+fslArea = tab.area(fslROI, hoxsubcort.list)
+fslArea$cm3 = fslArea$N_Voxels * prod(pixdim(reg.imgs$ROI)[2:4])/1000
+```
+
+Here is the breakdown of areas engaged by the tumor according to the atlas (in voxels and cm$^3$).
+
+```{r, results='asis', echo=FALSE}
+
+cat("### FSL ROI Breakdown\n")
+xtab = xtable(fslArea)
+print.xtable( xtab, type="html")
+
+```
+
+
+We can plot the FLAIR with the ROI overlaid with different colors for the different structures according to the atlas. 
+
+
+```{r plot_atlas, cache = TRUE}
+# xyz = ceiling(cog(fslROI))
+xyz = c(134, 120, 85)
+res = hoxsubcort.img
+res[ fslROI == 0 ] = NA
+res[ res %in% -99] = 0
+res = cal_img(res)
+n = res@cal_max
+bcols <- brewer_pal("div", pal = "RdBu")(5)
+cols = gradient_n_pal(bcols)(seq(0, 1, length = n))
+cols = alpha(cols, 0.25)
+orthographic(reg.imgs$FLAIR, res, 
+             xyz=xyz, col.y= cols)
+```

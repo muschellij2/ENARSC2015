@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+\.travis\.yml
+.*\.DS_Store$
+^\.travis\.yml$
+.*.log
+vignettes/compare_cache/*
+vignettes/DCM2NII_cache/*
+vignettes/Pipeline_Comparison_cache/*
+vignettes/tutorial_cache/*

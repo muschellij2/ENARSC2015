@@ -1,0 +1,2362 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdfetex 2014.7.17)  27 AUG 2014 10:33
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode \input /Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignet
+tes/fsl_pipeline.md
+(/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:5:
+ Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.5 output: html_
+                 document
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:7:
+ Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.7 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:13
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.13 install_
+             github("muschellij2/fslr")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:15
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.15 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:16
+: You can't use `macro parameter character #' in vertical mode.
+l.16 #
+      # Introduction
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:16
+: You can't use `macro parameter character #' in vertical mode.
+l.16 ##
+        Introduction
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:20
+: You can't use `macro parameter character #' in vertical mode.
+l.20 #
+      # Step 1: Bias Field Correction
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:20
+: You can't use `macro parameter character #' in vertical mode.
+l.20 ##
+        Step 1: Bias Field Correction
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:35
+: You can't use `macro parameter character #' in vertical mode.
+l.35 #
+      # If you are running interactively, you need to specify fsl.path
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:35
+: You can't use `macro parameter character #' in vertical mode.
+l.35 ##
+        If you are running interactively, you need to specify fsl.path
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:38
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.38 copy_
+          data(outdir, get_mipav = FALSE)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:43
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.43 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (31.84471pt too wide) in paragraph at lines 38--43
+[]\tenrm copy$[]\teni ata\tenrm (\teni outdir; get[]ipav \tenrm = \teni FALSE\t
+enrm )\teni mods \tenrm = \teni c\tenrm ("\teni T\tenrm 1"\teni ; \tenrm "\teni
+ T\tenrm 2"\teni ; \tenrm "\teni FLAIR\tenrm ")\teni niis \tenrm = \teni paste\
+tenrm 0(\teni mods; \tenrm "\teni :nii:gz\tenrm ")\teni files \tenrm =|
+
+\hbox(7.5+2.5)x469.75499
+.\hbox(0.0+0.0)x20.0
+.\tenrm c
+.\tenrm o
+.\tenrm p
+.\kern-0.27779
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+: You can't use `macro parameter character #' in vertical mode.
+l.44 #
+      ### remove .nii.gz extension and use basename
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+: You can't use `macro parameter character #' in vertical mode.
+l.44 ##
+       ## remove .nii.gz extension and use basename
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+: You can't use `macro parameter character #' in vertical mode.
+l.44 ###
+        # remove .nii.gz extension and use basename
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+: You can't use `macro parameter character #' in vertical mode.
+l.44 ####
+          remove .nii.gz extension and use basename
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:47
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.47 bias_
+          files = file.path(outdir, paste0(mods, "_FSL_N3Correct"))
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:51
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.51 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (37.7554pt too wide) in paragraph at lines 47--51
+[]\tenrm bias$[]\teni iles \tenrm = \teni file:path\tenrm (\teni outdir; paste\
+tenrm 0(\teni mods; \tenrm "[]\teni SL[]\tenrm 3\teni Correct\tenrm "))\teni na
+mes\tenrm (\teni bias[]iles\tenrm ) = \teni names\tenrm (\teni files\tenrm ) = 
+\teni modsfiles\tenrm \`$ |
+
+\hbox(7.5+2.86108)x469.75499
+.\hbox(0.0+0.0)x20.0
+.\tenrm b
+.\tenrm i
+.\tenrm a
+.\tenrm s
+.etc.
+
+
+Overfull \hbox (92.41273pt too wide) in paragraph at lines 52--60
+[]\tenrm ``` T1 "/Users/johnmuschelli/Desktop/results/NIfTI/T1.nii.gz" T2 "/Use
+rs/johnmuschelli/Desktop/results/NIfTI/T2.nii.gz"|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm T
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:62
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.62 bias_
+          files
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:64
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.64 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:67
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.67    "/Users/johnmuschelli/Desktop/results/T1_
+                                                 FSL_N3Correct"
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:73
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.73 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (464.17854pt too wide) in paragraph at lines 65--73
+[]\tenrm ``` T1 "/Users/johnmuschelli/Desktop/results/T1$[]\teni SL[]\tenrm 3\t
+eni Correct\tenrm "\teni T\tenrm 2"\teni =Users=johnmuschelli=Desktop=results=T
+\tenrm 2[]\teni SL[]\tenrm 3\teni Correct\tenrm "\teni FLAIR\tenrm "\teni =User
+s=johnmuschelli=Desktop=results=FLAIR[]SL[]\tenrm 3\teni Correct\tenrm "\`$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm T
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:77
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.77 for (ifile in seq_
+                       along(files)){
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:81
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.81 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:81
+: Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.81 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (130.6767pt too wide) in paragraph at lines 76--81
+[]\tenrm ```r for (ifile in seq$[]\teni long\tenrm (\teni files\tenrm ))[]$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:82
+: You can't use `macro parameter character #' in vertical mode.
+l.82   #
+        ## remove extra files from fast
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:82
+: You can't use `macro parameter character #' in vertical mode.
+l.82   ##
+         # remove extra files from fast
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:82
+: You can't use `macro parameter character #' in vertical mode.
+l.82   ###
+           remove extra files from fast
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:84
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.84   seg_
+           file = paste0(bias_file, "_seg", ext)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:86
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.86 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (0.99808pt too wide) in paragraph at lines 82--86
+[]\tenrm remove ex-tra files from fast ext = get.imgext() seg$[]\teni ile \tenr
+m = \teni paste\tenrm 0(\teni bias[]ile; \tenrm "[]\teni eg\tenrm "\teni ; ext\
+tenrm )\teni file:remove\tenrm (\teni seg[]ile\tenrm )$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm r
+.\tenrm e
+.\tenrm m
+.\tenrm o
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:87
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.87   output = paste0(bias_
+                            file, "_restore", ext)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:89
+: Extra }, or forgotten $.
+l.89 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:91
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.91 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:93
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.93 ...="/Users/johnmuschelli/Desktop/results/T1_
+                                                  FSL_N3Correct" "/Users/joh...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:94
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.94 ...}/etc/fslconf/fsl.sh; FSLOUTPUTTYPE=NIFTI_
+                                                  GZ; export FSLOUTPUTTYPE; ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:94
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.94 ...="/Users/johnmuschelli/Desktop/results/T2_
+                                                  FSL_N3Correct" "/Users/joh...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:95
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.95 ...}/etc/fslconf/fsl.sh; FSLOUTPUTTYPE=NIFTI_
+                                                  GZ; export FSLOUTPUTTYPE; ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:95
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.95 ...Users/johnmuschelli/Desktop/results/FLAIR_
+                                                  FSL_N3Correct" "/Users/joh...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:97
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.97 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (467.50937pt too wide) in paragraph at lines 92--97
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/fast -B --n
+opve -v --out="/Users/johnmuschelli/Desktop/results/T1$[]\teni SL[]\tenrm 3\ten
+i Correct\tenrm ""\teni =Users=johnmuschelli=Desktop=results=NIfTI=T\tenrm 1\te
+ni :nii:gz\tenrm "; \teni FSLDIR \tenrm =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (158.00433pt too wide) in paragraph at lines 92--97
+\teni =usr=local=fsl\tenrm ; \teni exportFSLDIR\tenrm ; \teni sh$\tenrm FSLDIR/
+etc/fslconf/fsl.sh; FSLOUTPUTTYPE=NIFTI$[]\teni Z\tenrm ; \teni exportFSLOUTPUT
+TYPE\tenrm ;$FSLDIR/bin/fast|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni =
+.\teni u
+.\teni s
+.\teni r
+.\kern0.27779
+.etc.
+
+
+Overfull \hbox (206.29385pt too wide) in paragraph at lines 92--97
+\tenrm -B --nopve -v --out="/Users/johnmuschelli/Desktop/results/T2$[]\teni SL[
+]\tenrm 3\teni Correct\tenrm ""\teni =Users=johnmuschelli=Desktop=results=NIfTI
+=T\tenrm 2\teni :nii:gz\tenrm "; \teni FSLDIR \tenrm =|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm -
+.\discretionary
+.\tenrm B
+.\glue 3.33333 plus 1.66498 minus 1.11221
+.\tenrm { (ligature --)
+.etc.
+
+
+Overfull \hbox (158.00433pt too wide) in paragraph at lines 92--97
+\teni =usr=local=fsl\tenrm ; \teni exportFSLDIR\tenrm ; \teni sh$\tenrm FSLDIR/
+etc/fslconf/fsl.sh; FSLOUTPUTTYPE=NIFTI$[]\teni Z\tenrm ; \teni exportFSLOUTPUT
+TYPE\tenrm ;$FSLDIR/bin/fast|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni =
+.\teni u
+.\teni s
+.\teni r
+.\kern0.27779
+.etc.
+
+
+Overfull \hbox (202.54605pt too wide) in paragraph at lines 92--97
+\tenrm -B --nopve -v --out="/Users/johnmuschelli/Desktop/results/FLAIR$[]\teni 
+SL[]\tenrm 3\teni Correct\tenrm ""\teni =Users=johnmuschelli=Desktop=results=NI
+fTI=FLAIR:nii:gz\tenrm "; \`$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm -
+.\discretionary
+.\tenrm B
+.\glue 3.33333 plus 1.66498 minus 1.11221
+.\tenrm { (ligature --)
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:98
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.98 ...AST, it automatically tries to segment (`_
+                                                  seg` file) the image, whic...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:99
+: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.99 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (563.8687pt too wide) in paragraph at lines 98--99
+[]\tenrm In FAST, it au-to-mat-i-cally tries to seg-ment (`$[]\teni eg\tenrm `\
+teni file\tenrm )\teni theimage; whichisnotofinteresthereandattachesa\tenrm `[]
+\teni estore\tenrm `\teni suffixtothefile:Thereforewedeletedthesegmentfileandre
+namedtherestorefiletotheoutputfilenamelocatedin\tenrm `\teni bias[]ile\tenrm `\
+teni :$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm I
+.\tenrm n
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm F
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:10
+0: You can't use `macro parameter character #' in vertical mode.
+l.100 #
+       # Step 2: Skull Stripping
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:10
+0: You can't use `macro parameter character #' in vertical mode.
+l.100 ##
+         Step 2: Skull Stripping
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:10
+5: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.105 bet_
+          files = paste0(bias_files, "_BET")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:11
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.110 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (38.15794pt too wide) in paragraph at lines 104--110
+[]\tenrm ```r bet$[]\teni iles \tenrm = \teni paste\tenrm 0(\teni bias[]iles; \
+tenrm "[]\teni ET\tenrm ")\teni names\tenrm (\teni bet[]iles\tenrm ) = \teni mo
+dsfslbet\tenrm (\teni infile \tenrm = \teni bias[]iles\tenrm ["\teni FLAIR\tenr
+m "]\teni ; outfile \tenrm =|
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:11
+2: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.112 ...sers/johnmuschelli/Desktop/results/FLAIR_
+                                                  FSL_N3Correct" "/Users/joh...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:11
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.114 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (403.22574pt too wide) in paragraph at lines 111--114
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/bet2 "/User
+s/johnmuschelli/Desktop/results/FLAIR$[]\teni SL[]\tenrm 3\teni Correct\tenrm "
+"\teni =Users=johnmuschelli=Desktop=results=FLAIR[]SL[]\tenrm 3\teni Correct[]E
+T\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:12
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.124 fslbet(infile = bias_
+                           files["T1"], outfile = bet_files["T1"],
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:12
+7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.127 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:12
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.129 ..."/Users/johnmuschelli/Desktop/results/T1_
+                                                  FSL_N3Correct" "/Users/joh...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:13
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.131 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (361.5321pt too wide) in paragraph at lines 128--131
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/bet2 "/User
+s/johnmuschelli/Desktop/results/T1$[]\teni SL[]\tenrm 3\teni Correct\tenrm ""\t
+eni =Users=johnmuschelli=Desktop=results=T\tenrm 1[]\teni SL[]\tenrm 3\teni Cor
+rect[]ET\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:14
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.141 fslbet(infile = bias_
+                           files["T2"], outfile = bet_files["T2"],
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:14
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.144 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:14
+6: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.146 ..."/Users/johnmuschelli/Desktop/results/T2_
+                                                  FSL_N3Correct" "/Users/joh...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:14
+8: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.148 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (361.5321pt too wide) in paragraph at lines 145--148
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/bet2 "/User
+s/johnmuschelli/Desktop/results/T2$[]\teni SL[]\tenrm 3\teni Correct\tenrm ""\t
+eni =Users=johnmuschelli=Desktop=results=T\tenrm 2[]\teni SL[]\tenrm 3\teni Cor
+rect[]ET\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:15
+7: You can't use `macro parameter character #' in vertical mode.
+l.157 #
+       # Step 3: Co-registration within Person, across modality
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:15
+7: You can't use `macro parameter character #' in vertical mode.
+l.157 ##
+         Step 3: Co-registration within Person, across modality
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:16
+8: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.168 reffile = bet_
+                    files["FLAIR"]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:17
+6: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.176 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (8.60858pt too wide) in paragraph at lines 167--176
+[]\tenrm ```r ref-file = bet$[]\teni iles\tenrm ["\teni FLAIR\tenrm "]\teni inf
+ile \tenrm = \teni bet[]iles\tenrm [[]\teni T\tenrm 1[]]\teni ofile \tenrm = \t
+eni paste\tenrm 0(\teni bet[]iles\tenrm [[]\teni T\tenrm 1[]]\teni ; \tenrm "[]
+\teni egFLAIR\tenrm ")\teni omat \tenrm =|
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:17
+8: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.178 ..."/Users/johnmuschelli/Desktop/results/T1_
+                                                  FSL_N3Correct_BET" -ref "/...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:18
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.180 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (97.49821pt too wide) in paragraph at lines 177--180
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/T1$[]\teni SL[]\tenrm 3\teni Correct[]ET\t
+enrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (239.805pt too wide) in paragraph at lines 177--180
+\teni ref\tenrm "\teni =Users=johnmuschelli=Desktop=results=FLAIR[]SL[]\tenrm 3
+\teni Correct[]ET\tenrm " \tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschell
+i=Desktop=results=T\tenrm 1[]\teni SL[]\tenrm 3\teni Correct[]ET[]egFLAIR\tenrm
+ " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:18
+2: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.182 infile= bet_
+                  files['T2']
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:18
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.189 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (8.87108pt too wide) in paragraph at lines 181--189
+[]\tenrm ```r in-file= bet$[]\teni iles\tenrm [[]\teni T\tenrm 2[]]\teni ofile 
+\tenrm = \teni paste\tenrm 0(\teni bet[]iles\tenrm [[]\teni T\tenrm 2[]]\teni ;
+ \tenrm "[]\teni egFLAIR\tenrm ")\teni omat \tenrm = \teni paste\tenrm 0(\teni 
+ofile; \tenrm "\teni :mat\tenrm ")\teni regt\tenrm 2 =|
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:19
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.191 ..."/Users/johnmuschelli/Desktop/results/T2_
+                                                  FSL_N3Correct_BET" -ref "/...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:19
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.193 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (97.49821pt too wide) in paragraph at lines 190--193
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/T2$[]\teni SL[]\tenrm 3\teni Correct[]ET\t
+enrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (239.805pt too wide) in paragraph at lines 190--193
+\teni ref\tenrm "\teni =Users=johnmuschelli=Desktop=results=FLAIR[]SL[]\tenrm 3
+\teni Correct[]ET\tenrm " \tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschell
+i=Desktop=results=T\tenrm 2[]\teni SL[]\tenrm 3\teni Correct[]ET[]egFLAIR\tenrm
+ " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:19
+4: You can't use `macro parameter character #' in vertical mode.
+l.194 #
+       # Step 3b: Co-registration within Person, across modality
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:19
+4: You can't use `macro parameter character #' in vertical mode.
+l.194 ##
+         Step 3b: Co-registration within Person, across modality
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:19
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.199 reffile = bias_
+                     files["FLAIR"]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:20
+7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.207 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (22.02197pt too wide) in paragraph at lines 198--207
+[]\tenrm ```r ref-file = bias$[]\teni iles\tenrm ["\teni FLAIR\tenrm "]\teni in
+file \tenrm = \teni bias[]iles\tenrm [[]\teni T\tenrm 1[]]\teni ofile \tenrm = 
+\teni paste\tenrm 0(\teni bias[]iles\tenrm [[]\teni T\tenrm 1[]]\teni ; \tenrm 
+"[]\teni egFLAIR\tenrm ")\teni omat \tenrm =|
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:20
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.209 ..."/Users/johnmuschelli/Desktop/results/T1_
+                                                  FSL_N3Correct" -ref "/User...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:21
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.211 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (75.42426pt too wide) in paragraph at lines 208--211
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/T1$[]\teni SL[]\tenrm 3\teni Correct\tenrm
+ " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (197.04597pt too wide) in paragraph at lines 208--211
+\teni ref\tenrm "\teni =Users=johnmuschelli=Desktop=results=FLAIR[]SL[]\tenrm 3
+\teni Correct\tenrm " \tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschelli=De
+sktop=results=T\tenrm 1[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:21
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.213 infile= bias_
+                   files['T2']
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:22
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.220 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (17.13333pt too wide) in paragraph at lines 212--220
+[]\tenrm ```r in-file= bias$[]\teni iles\tenrm [[]\teni T\tenrm 2[]]\teni ofile
+ \tenrm = \teni paste\tenrm 0(\teni bias[]iles\tenrm [[]\teni T\tenrm 2[]]\teni
+ ; \tenrm "[]\teni egFLAIR\tenrm ")\teni omat \tenrm = \teni paste\tenrm 0(\ten
+i ofile; \tenrm "\teni :mat\tenrm ")\teni regt\tenrm 2 =|
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:22
+2: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.222 ..."/Users/johnmuschelli/Desktop/results/T2_
+                                                  FSL_N3Correct" -ref "/User...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:22
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.224 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (75.42426pt too wide) in paragraph at lines 221--224
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/T2$[]\teni SL[]\tenrm 3\teni Correct\tenrm
+ " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (197.04597pt too wide) in paragraph at lines 221--224
+\teni ref\tenrm "\teni =Users=johnmuschelli=Desktop=results=FLAIR[]SL[]\tenrm 3
+\teni Correct\tenrm " \tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschelli=De
+sktop=results=T\tenrm 2[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:22
+5: You can't use `macro parameter character #' in vertical mode.
+l.225 #
+       # Step 4 Calculations
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:22
+5: You can't use `macro parameter character #' in vertical mode.
+l.225 ##
+         Step 4 Calculations
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:23
+2: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.232 bet_
+          files = paste0(bias_files, "_BET")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:24
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.241 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (56.17732pt too wide) in paragraph at lines 231--241
+[]\tenrm ```r bet$[]\teni iles \tenrm = \teni paste\tenrm 0(\teni bias[]iles; \
+tenrm "[]\teni ET\tenrm ")\teni names\tenrm (\teni bet[]iles\tenrm ) = \teni mo
+dsflair \tenrm = \teni readNIfTI\tenrm (\teni bet[]iles\tenrm [[]\teni FLAIR[]\
+tenrm ]\teni ; reorient \tenrm =|
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+
+Overfull \hbox (159.68872pt too wide) in paragraph at lines 231--241
+\teni FALSE\tenrm )\teni roi \tenrm = \teni readNIfTI\tenrm (\teni roifile; reo
+rient \tenrm = \teni FALSE\tenrm )\teni mask \tenrm = \teni flair > \tenrm 0\te
+ni regt\tenrm 1 = \teni readNIfTI\tenrm (\teni paste\tenrm 0(\teni bet[]iles\te
+nrm [[]\teni T\tenrm 1[]]\teni ; \tenrm "[]\teni egFLAIR\tenrm ")\teni ; reorie
+nt \tenrm =|
+
+\hbox(7.51782+2.86108)x469.75499
+.\teni F
+.\kern1.3889
+.\teni A
+.\teni L
+.\teni S
+.etc.
+
+
+Overfull \hbox (11.8651pt too wide) in paragraph at lines 231--241
+\teni FALSE\tenrm )\teni regt\tenrm 2 = \teni readNIfTI\tenrm (\teni paste\tenr
+m 0(\teni bet[]iles\tenrm [[]\teni T\tenrm 2[]]\teni ; \tenrm "[]\teni egFLAIR\
+tenrm ")\teni ; reorient \tenrm = \teni FALSE\tenrm )\teni orthographic\tenrm (
+\teni flair\tenrm )\`$ |
+
+\hbox(7.51782+2.86108)x469.75499
+.\teni F
+.\kern1.3889
+.\teni A
+.\teni L
+.\teni S
+.etc.
+
+[2]
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:26
+0: You can't use `macro parameter character #' in horizontal mode.
+l.260 #
+       ## to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:26
+0: You can't use `macro parameter character #' in horizontal mode.
+l.260 ##
+        # to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:26
+0: You can't use `macro parameter character #' in horizontal mode.
+l.260 ###
+          to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:26
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.260 ### to set cal_
+                     min and @cal_max for plotting
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:26
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.264 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:27
+1: You can't use `macro parameter character #' in horizontal mode.
+l.271 #
+       ## to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:27
+1: You can't use `macro parameter character #' in horizontal mode.
+l.271 ##
+        # to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:27
+1: You can't use `macro parameter character #' in horizontal mode.
+l.271 ###
+          to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:27
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.271 ### to set cal_
+                     min and @cal_max for plotting
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:27
+5: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.275 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:28
+5: You can't use `macro parameter character #' in horizontal mode.
+l.285 #
+       ## to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:28
+5: You can't use `macro parameter character #' in horizontal mode.
+l.285 ##
+        # to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:28
+5: You can't use `macro parameter character #' in horizontal mode.
+l.285 ###
+          to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:28
+5: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.285 ### to set cal_
+                     min and @cal_max for plotting
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:28
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.289 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (39.99615pt too wide) in paragraph at lines 278--289
+[]\tenrm ```r rat.t1 = flair rat.t1@.Data = flair / regt1 rat.t1[mask == 0] = m
+in(rat.t1[mask==1]) rat.t1[is.infinite(rat.t1)]=|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+
+Overfull \hbox (116.90735pt too wide) in paragraph at lines 278--289
+\tenrm 0 rat.t1[rat.t1 > 1000]= 1000 rat.t1 = log(rat.t1 + 1)  to set cal$[]\te
+ni inand\tenrm @\teni cal[]axforplottingrat:t\tenrm 1 = \teni cal[]mg\tenrm (\t
+eni rat:t\tenrm 1)\teni orthographic\tenrm (\teni rat:t\tenrm 1)\`$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm 0
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm r
+.\tenrm a
+.\tenrm t
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:29
+9: You can't use `macro parameter character #' in horizontal mode.
+l.299 #
+       ## to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:29
+9: You can't use `macro parameter character #' in horizontal mode.
+l.299 ##
+        # to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:29
+9: You can't use `macro parameter character #' in horizontal mode.
+l.299 ###
+          to set cal_min and @cal_max for plotting
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:29
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.299 ### to set cal_
+                     min and @cal_max for plotting
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:30
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.303 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (39.99615pt too wide) in paragraph at lines 292--303
+[]\tenrm ```r rat.t2 = flair rat.t2@.Data = flair / regt2 rat.t2[mask == 0] = m
+in(rat.t2[mask==1]) rat.t2[is.infinite(rat.t2)]=|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+
+Overfull \hbox (116.90735pt too wide) in paragraph at lines 292--303
+\tenrm 0 rat.t2[rat.t2 > 1000]= 1000 rat.t2 = log(rat.t2 + 1)  to set cal$[]\te
+ni inand\tenrm @\teni cal[]axforplottingrat:t\tenrm 2 = \teni cal[]mg\tenrm (\t
+eni rat:t\tenrm 2)\teni orthographic\tenrm (\teni rat:t\tenrm 2)\`$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm 0
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm r
+.\tenrm a
+.\tenrm t
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:35
+1: You can't use `macro parameter character #' in vertical mode.
+l.351 #
+       # Step 5 Registration to Template
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:35
+1: You can't use `macro parameter character #' in vertical mode.
+l.351 ##
+         Step 5 Registration to Template
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:35
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.359 ...th(fsldir(), "data", "standard", "MNI152_
+                                                  T1_1mm.nii.gz")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:36
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.369 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (91.36205pt too wide) in paragraph at lines 358--369
+[]\tenrm ```r at-las = file.path(fsldir(), "data", "stan-dard", "MNI152$[]1[]\t
+eni mm:nii:gz\tenrm ")\teni t\tenrm 1 = \teni paste\tenrm 0(\teni bias[]iles\te
+nrm [[]\teni T\tenrm 1[]]\teni ; \tenrm "[]\teni egFLAIR\tenrm ")\teni reg:t\te
+nrm 1 =|
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+
+Overfull \hbox (19.64793pt too wide) in paragraph at lines 358--369
+\teni paste\tenrm 0(\teni t\tenrm 1\teni ;[] egMNI[]\tenrm )\teni omat \tenrm =
+ \teni paste\tenrm 0(\teni t\tenrm 1\teni ; \tenrm "\teni :mat\tenrm ")\teni re
+s \tenrm = \teni flirt\tenrm (\teni infile \tenrm = \teni t\tenrm 1\teni ; reff
+ile \tenrm = \teni atlas; omat \tenrm = \teni omat; outfile \tenrm =|
+
+\hbox(7.51782+2.5)x469.75499
+.\teni p
+.\teni a
+.\teni s
+.\teni t
+.\teni e
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:37
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.371 ..."/Users/johnmuschelli/Desktop/results/T1_
+                                                  FSL_N3Correct_regFLAIR" -r...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:37
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.373 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (124.61298pt too wide) in paragraph at lines 370--373
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/T1$[]\teni SL[]\tenrm 3\teni Correct[]egFL
+AIR\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (189.59604pt too wide) in paragraph at lines 370--373
+\teni ref\tenrm "\teni =usr=local=fsl=data=standard=MNI\tenrm 152[]1[]\teni mm:
+nii:gz\tenrm " \tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschelli=Desktop=r
+esults=T\tenrm 1[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]egMNI\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:37
+6: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.376 fnirt.t1 = paste0(t1, '_
+                              regMNI_FNIRT')
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:37
+8: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.378 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:38
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.389 ..."/Users/johnmuschelli/Desktop/results/T1_
+                                                  FSL_N3Correct_regFLAIR_reg...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:39
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.391 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (174.12372pt too wide) in paragraph at lines 388--391
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/fnirt --in=
+"/Users/johnmuschelli/Desktop/results/T1$[]\teni SL[]\tenrm 3\teni Correct[]egF
+LAIR[]egMNI\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (270.33478pt too wide) in paragraph at lines 388--391
+\tensy ^^@\teni ref \tenrm = "\teni =usr=local=fsl=data=standard=MNI\tenrm 152[
+]1[]\teni mm:nii:gz\tenrm " \tensy ^^@ ^^@\teni iout \tenrm = "\teni =Users=joh
+nmuschelli=Desktop=results=T\tenrm 1[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[
+]egMNI[]NIRT\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.etc.
+
+
+Overfull \hbox (38.85522pt too wide) in paragraph at lines 388--391
+\tensy ^^@\teni verbose \tensy ^^@ ^^@\teni cout \tenrm = \teni =Users=johnmusc
+helli=Desktop=results=T\tenrm 1[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]egMN
+I[]NIRT[]oeff \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni v
+.\kern0.35878
+.\teni e
+.\teni r
+.etc.
+
+[3]
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:39
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.394 t2 = paste0(bias_
+                       files['T2'], "_regFLAIR")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:39
+7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.397 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (51.70024pt too wide) in paragraph at lines 393--397
+[]\tenrm ```r t2 = paste0(bias$[]\teni iles\tenrm [[]\teni T\tenrm 2[]]\teni ; 
+\tenrm "[]\teni egFLAIR\tenrm ")\teni reg:t\tenrm 2 = \teni paste\tenrm 0(\teni
+ t\tenrm 2\teni ;[] egMNI[]\tenrm )\teni fnirt:t\tenrm 2 = \teni paste\tenrm 0(
+\teni t\tenrm 2\teni ;[] egMNI[]NIRT[]\tenrm )$ |
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:39
+8: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.398 flirt_
+            apply(infile = t2,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:40
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.404 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:40
+6: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.406 ..."/Users/johnmuschelli/Desktop/results/T2_
+                                                  FSL_N3Correct_regFLAIR" -r...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:40
+8: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.408 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (124.61298pt too wide) in paragraph at lines 405--408
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/T2$[]\teni SL[]\tenrm 3\teni Correct[]egFL
+AIR\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (189.59604pt too wide) in paragraph at lines 405--408
+\teni ref\tenrm "\teni =usr=local=fsl=data=standard=MNI\tenrm 152[]1[]\teni mm:
+nii:gz\tenrm " \tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschelli=Desktop=r
+esults=T\tenrm 2[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]egMNI\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:42
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.420 fsl_
+          applywarp(infile = reg.t2,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:42
+7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.427 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:42
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.429 ..."/Users/johnmuschelli/Desktop/results/T2_
+                                                  FSL_N3Correct_regFLAIR_reg...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:43
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.431 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (200.51266pt too wide) in paragraph at lines 428--431
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/applywarp -
+-in="/Users/johnmuschelli/Desktop/results/T2$[]\teni SL[]\tenrm 3\teni Correct[
+]egFLAIR[]egMNI\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (266.88965pt too wide) in paragraph at lines 428--431
+\tensy ^^@\teni ref \tenrm = "\teni =usr=local=fsl=data=standard=MNI\tenrm 152[
+]1[]\teni mm:nii:gz\tenrm " \tensy ^^@ ^^@\teni out \tenrm = "\teni =Users=john
+muschelli=Desktop=results=T\tenrm 2[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]
+egMNI[]NIRT\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.etc.
+
+
+Overfull \hbox (4.18964pt too wide) in paragraph at lines 428--431
+\tensy ^^@\teni warp \tenrm = "\teni =Users=johnmuschelli=Desktop=results=T\ten
+rm 1[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]egMNI[]NIRT[]oeff\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni w
+.\kern0.26909
+.\teni a
+.\teni r
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:43
+7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.437 flair = bias_
+                   files['FLAIR']
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.440 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (25.1908pt too wide) in paragraph at lines 436--440
+[]\tenrm ```r flair = bias$[]\teni iles\tenrm [[]\teni FLAIR[]\tenrm ]\teni reg
+:flair \tenrm = \teni paste\tenrm 0(\teni t\tenrm 2\teni ;[] egMNI[]\tenrm )\te
+ni fnirt:flair \tenrm = \teni paste\tenrm 0(\teni flair;[] egMNI[]NIRT[]\tenrm 
+)$ |
+
+\hbox(7.51782+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm \ (ligature ``)
+.\tenrm `
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.441 flirt_
+            apply(infile = flair,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.447 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:44
+9: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.449 ...sers/johnmuschelli/Desktop/results/FLAIR_
+                                                  FSL_N3Correct" -ref "/usr/...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:45
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.451 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (94.45207pt too wide) in paragraph at lines 448--451
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/FLAIR$[]\teni SL[]\tenrm 3\teni Correct\te
+nrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (189.59604pt too wide) in paragraph at lines 448--451
+\teni ref\tenrm "\teni =usr=local=fsl=data=standard=MNI\tenrm 152[]1[]\teni mm:
+nii:gz\tenrm " \tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschelli=Desktop=r
+esults=T\tenrm 2[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]egMNI\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:46
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.463 fsl_
+          applywarp(infile = reg.flair,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:47
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.470 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:47
+2: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.472 ..."/Users/johnmuschelli/Desktop/results/T2_
+                                                  FSL_N3Correct_regFLAIR_reg...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:47
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.474 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (200.51266pt too wide) in paragraph at lines 471--474
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/applywarp -
+-in="/Users/johnmuschelli/Desktop/results/T2$[]\teni SL[]\tenrm 3\teni Correct[
+]egFLAIR[]egMNI\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (240.444pt too wide) in paragraph at lines 471--474
+\tensy ^^@\teni ref \tenrm = "\teni =usr=local=fsl=data=standard=MNI\tenrm 152[
+]1[]\teni mm:nii:gz\tenrm " \tensy ^^@ ^^@\teni out \tenrm = "\teni =Users=john
+muschelli=Desktop=results=FLAIR[]SL[]\tenrm 3\teni Correct[]egMNI[]NIRT\tenrm "
+ \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.etc.
+
+
+Overfull \hbox (4.18964pt too wide) in paragraph at lines 471--474
+\tensy ^^@\teni warp \tenrm = "\teni =Users=johnmuschelli=Desktop=results=T\ten
+rm 1[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]egMNI[]NIRT[]oeff\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni w
+.\kern0.26909
+.\teni a
+.\teni r
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:48
+1: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.481 reg.roi = paste0(roi, '_
+                              regMNI')
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:48
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.483 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:48
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.484 flirt_
+            apply(infile = roi,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:49
+0: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.490 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:49
+2: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.492 ...ref "/usr/local/fsl/data/standard/MNI152_
+                                                  T1_1mm.nii.gz" -out "/User...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:49
+4: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.494 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (36.26654pt too wide) in paragraph at lines 491--494
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/flirt -in "
+/Users/johnmuschelli/Desktop/results/NIfTI/ROI"|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (107.02983pt too wide) in paragraph at lines 491--494
+\tenrm -ref "/usr/local/fsl/data/standard/MNI152$[]1[]\teni mm:nii:gz\tenrm " \
+tensy ^^@ \teni out\tenrm "\teni =Users=johnmuschelli=Desktop=results=NIfTI=ROI
+[]egMNI\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm -
+.\discretionary
+.\tenrm r
+.\tenrm e
+.\tenrm f
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:50
+6: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.506 fsl_
+          applywarp(infile = reg.roi,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:51
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.513 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:51
+5: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.515 .../johnmuschelli/Desktop/results/NIfTI/ROI_
+                                                  regMNI" --ref="/usr/local/...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:51
+7: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.517 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (120.02129pt too wide) in paragraph at lines 514--517
+\teni NIFTI[]Z\tenrm ; \teni exportFSLOUTPUTTYPE\tenrm ;$FSLDIR/bin/applywarp -
+-in="/Users/johnmuschelli/Desktop/results/NIfTI/ROI$[]\teni egMNI\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni N
+.\kern1.09026
+.\teni I
+.\kern0.7847
+.\teni F
+.etc.
+
+
+Overfull \hbox (195.0225pt too wide) in paragraph at lines 514--517
+\tensy ^^@\teni ref \tenrm = "\teni =usr=local=fsl=data=standard=MNI\tenrm 152[
+]1[]\teni mm:nii:gz\tenrm " \tensy ^^@ ^^@\teni out \tenrm = "\teni =Users=john
+muschelli=Desktop=results=NIfTI=ROI[]egMNI[]NIRT\tenrm " \tensy ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni r
+.\kern0.27779
+.\teni e
+.\teni f
+.etc.
+
+
+Overfull \hbox (4.18964pt too wide) in paragraph at lines 514--517
+\tensy ^^@\teni warp \tenrm = "\teni =Users=johnmuschelli=Desktop=results=T\ten
+rm 1[]\teni SL[]\tenrm 3\teni Correct[]egFLAIR[]egMNI[]NIRT[]oeff\tenrm " \tens
+y ^^@|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tensy ^^@
+.\teni w
+.\kern0.26909
+.\teni a
+.\teni r
+.etc.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:52
+3: You can't use `macro parameter character #' in horizontal mode.
+l.523 #
+        fsl_applywarp()
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:52
+3: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.523 # fsl_
+            applywarp()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/johnmuschelli/Dropbox/Packages/ENAR_SC_2015/vignettes/fsl_pipeline.md:52
+4: You can't use `macro parameter character #' in math mode.
+l.524 #
+        cimg
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+)
+! Emergency stop.
+<*> ...ages/ENAR_SC_2015/vignettes/fsl_pipeline.md
+                                                  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!

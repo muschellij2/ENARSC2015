@@ -1,0 +1,190 @@
+---
+title: "DICOM to NIfTI"
+author: "John Muschelli"
+date: "August 21, 2014"
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{DICOM to NIfTI Conversion}
+output:
+  knitr:::html_vignette:
+    toc: yes  
+---
+
+# DICOM to NIfTI Conversion in R
+
+```{r knit-setup, echo=FALSE, results='hide', eval=TRUE}
+library(knitr)
+opts_chunk$set(echo=TRUE, prompt=FALSE, message=TRUE, warning=TRUE, comment="", cache=TRUE)
+# cache.path <- path.expand("~/Dropbox/Packages/ENAR_SC_2015/vignettes/DCM2NII_cache/")
+# opts_chunk$set(cache.path=cache.path)
+```
+
+## Introduction
+
+This vignette describes how to convert from DICOM format to NIfTI using the `oro.dicom` package and useful `R` functions to read and write NIfTI files using the `oro.nifti` package.
+
+Let's first install these packages.
+```{r, eval=FALSE}
+install_github('muschellij2/ENARSC2015')
+# install.packages(c("oro.dicom", "oro.nifti"))
+```
+
+## Reading in DICOM data
+
+The workhorse function for reading in DICOM data is the `readDICOMFile` function in `oro.dicom`, where individual filenames are passed to be read.  The `readDICOM` function wraps this function and converts all DICOM files in a path into one list of data.  The `dicom2nifti` function takes the list of header information and array of values and creates a 3D `nifti` object.
+
+```{r}
+dcm2nii <- function(path, ## path to DICOM files
+                    outfile = NULL, ## output filename
+                    retimg = TRUE, # write file out to disk?
+                    ... # additional options to \code{\link{readDICOM}}
+                    ){
+  dicom <- readDICOM(path, flipud = FALSE, ...)
+  nifti <- dicom2nifti(dicom)
+  write = !is.null(outfile)
+  if (retimg){
+    if (is.null(outfile)) {
+      outfile = tempfile()
+      outfile = nii.stub(outfile)      
+    }
+  } else {
+    stopifnot(!is.null(outfile))
+  }
+  
+  if (write){
+    writeNIfTI(nifti, filename = outfile, 
+               verbose = TRUE, gzipped = TRUE)
+  } 
+  return(nifti)
+}
+```
+
+Let's specify an output directory: `~/Desktop/results` where the output images should be.
+
+```{r readin,  warning=FALSE, cache=TRUE}
+library(oro.dicom)
+library(oro.nifti)
+
+# output directory for nifti files
+outdir = tempdir()
+outdir = path.expand(outdir)
+
+if (!file.exists(outdir)){
+  dir.create(outdir, showWarnings =  FALSE)
+}
+
+# Data taken from http://www.osirix-viewer.com/datasets/
+mods = c("T1", "T2", "FLAIR", "ROI")
+hdrs = imgs = vector(mode="list", length= length(mods))
+names(imgs) = names(hdrs) = mods
+imod = 1
+for (imod in seq_along(mods)){
+  mod = mods[imod]
+  dicom_path = system.file(file.path("BRAINIX/DICOM", mod), package="ENARSC2015")
+  fname = file.path(outdir, mod)
+  headers <- readDICOM(dicom_path, pixelData=FALSE)$hdr
+  hdrs[[imod]] = dicomTable(headers)
+  img = dcm2nii(dicom_path, retimg = TRUE, outfile = fname)
+  imgs[[imod]] = img
+}
+```
+
+Some warnings may occur for this data.  Some data may not be correctly converted if they were acquired in a non-standard way.
+
+### Explanation of Code
+In 
+
+> `dicom_path = system.file(file.path("DICOM", mod), package="ENARSC2015")`
+
+We grabbed the directory for the DICOM data from the `ENARSC2015` directory.  The directories are mapped such as `DICOM/T1`.  The `readDICOM` function takes this directory, parses the DICOM files, and returns a list with slots `hdr` and `img`:
+
+> `headers <- readDICOM(dicom_path, pixelData=FALSE)$hdr`
+
+and note that `readDICOM` will **recursively** go through folders by default.  We specified `pixelData=FALSE`, indicated that `img` should be empty and only the header (metadata) should be read in.  Changing `dicom_path` to the path of your DICOM data is required, as well as output filenames
+
+The 
+
+> `hdrs[[imod]] = dicomTable(headers)`
+
+command used the `dicomTable` function to reshape the list of headers in to a `data.frame` with rows being images and columns being information form the header.
+
+Let us look at the header:
+```{r headers}
+class(hdrs[["T1"]])
+rn = rownames(hdrs[["T1"]])
+head(rn, 2)
+rownames(hdrs[["T1"]]) = basename(rn)
+hdrs[["T1"]][1:5, 1:5]
+```
+The filenames are the rownames of the `data.frame`. 
+
+If we look at the column names of the `data.frame`, we see that they are a combination of the key information from the DICOM and the field name.
+```{r header2}
+colnames(hdrs[["T1"]])[1:5]
+```
+
+You may want to strip these off and simply use the field names.
+```{r cn}
+head(gsub(".*-(.*)", "\\1", colnames(hdrs[["T1"]])), 10)
+```
+There may be cases that these are not unique and subsetting the columns you want is a better strategy.
+
+The `dcm2nii` function specified above wraps the 2 steps of reading in the DICOM data into an object and then using `dicom2nifti` on the object to convert the multiple DICOM slices into one 3D volume.  The results is a `nifti` object that can be written using `writeNIfTI` from the `oro.nifti` package and `dcm2nii` returns this nifti object of the image. 
+
+## nifti objects
+
+The `imgs` list is a list of objects of class `nifti`.
+```{r nif_class}
+sapply(imgs, class)
+imgs[["FLAIR"]]
+```
+The output shows some information about the `nifti` object, such as dimensions and pixel resolution.  These are S4 objects and must be referenced by the @ symbol for slots or functions that extract these slots.
+
+
+```{r img_info}
+head(slotNames(imgs[["FLAIR"]]))
+imgs[["FLAIR"]]@dim
+dim(imgs[["FLAIR"]])
+imgs[["FLAIR"]]@pixdim
+```
+
+The array of values are located in the `.Data` slot, but most array operations can be used on a `nifti` object, such as taking values greater than zero and taking the mean to get the proportion of the image greater than 0 or simple subsetting and replacement as in arrays.
+
+```{r img_op}
+i = imgs[["FLAIR"]]
+mean(i > 0)
+i[i < 0 ]= NA
+```
+## Reading and Displaying in NIfTI data
+
+Now that we have NIfTI files, we can read them in directly:
+
+```{r ex_readin}
+fname = file.path(outdir, "FLAIR")
+img = readNIfTI(fname)
+```
+
+We can plot the data using the `orthographic` function from `oro.nifti`:
+```{r ortho}
+orthographic(img, text="FLAIR image")
+image(img)
+image(img, z = 10, plot.type="single")
+```
+
+If we have an array, we can create `nifti` object with the `nifti` command:
+```{r makenii}
+arr = img > 300
+class(arr)
+nim = nifti(arr, dim = dim(img), pixdim=pixdim(img))
+orthographic(nim)
+```
+
+We can also present overlays on images.  Note we have to remove 0's from the image or it will color these as well.
+```{r over, dev='png'}
+library(scales)
+nim[nim == 0] = NA
+nim[nim == TRUE] = 1
+orthographic(img, nim, col.y=alpha("red", 0.25))
+```
+
+

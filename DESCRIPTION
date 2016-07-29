@@ -1,0 +1,30 @@
+Package: ENARSC2015
+Type: Package
+Title: ENAR 2015 Short Course
+Version: 1.0
+Date: 2014-08-25
+Author: John Muschelli <muschellij2@gmail.com>, Elizabeth Sweeney
+    <emsweene@jhsph.edu>
+Maintainer: John Muschelli <muschellij2@gmail.com>
+Description: Teaches people Neuroimaging!
+License: GPL-3
+Depends:
+    oro.nifti,
+    oro.dicom,
+    fslr
+Imports:
+    plyr,
+    rgl,
+    stringr,
+    misc3d,
+    XML,
+    AnalyzeFMRI
+VignetteBuilder: knitr
+Suggests:
+    knitr,
+    brainR,
+    scales,
+    xtable
+BugReports: https://github.com/muschellij2/fslr/issues
+LazyLoad: yes
+LazyData: true

@@ -1,0 +1,238 @@
+---
+title: "ANTsR Pipeline"
+author: "Elizabeth Sweeney"
+date: "August 21, 2014"
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{DICOM to NIfTI Conversion}
+output:
+  knitr:::html_vignette:
+    toc: yes
+---
+
+
+```{r knit-setup, echo=FALSE, results='hide', eval=TRUE}
+rm(list=ls())
+library(knitr)
+opts_chunk$set(cache = FALSE)
+```
+
+
+Install the ANTsR and ENARSC2015 R packages off of github using the library devtools.  Note that the ANTsR package may take a substantial amount of time to download. 
+
+
+```{r, eval = FALSE, echo = TRUE}
+library(devtools)
+install_github('stnava/ANTsR')
+install_github('muschellij2/ENARSC2015')
+```
+
+Load the ANTsR and ENARSC2015 libraries. 
+
+```{r}
+library(ANTsR)
+library(ENARSC2015)
+```
+
+Load volumes
+---
+
+The output directory for the analysis (you should change this for your machine).
+
+```{r set_enar_dir}
+rootdir = "~/ENARSC2015"
+rootdir = Sys.readlink(rootdir)
+outdir <- file.path(rootdir, 'inst', 'ANTsR')
+stopifnot(file.exists(outdir))
+```
+
+For this analysis, we provide the BRAINX data from OsiriX (http://www.osirix-viewer.com/datasets/) in the ENARSC2015 package.  The BRAINX data consists of multi-modal MRI from a patient with brain cancer.  Here we use the T1-w, T2-w and FLAIR volumes. 
+
+Get the path for the T1-w, T2-w, and FLAIR volumes that are contained in the ENARSC2015 package. 
+
+```{r get_img_names}
+t1.path <- system.file("BRAINIX/NIfTI/T1.nii.gz", package = 'ENARSC2015')
+t2.path <- system.file("BRAINIX/NIfTI/T2.nii.gz", package = 'ENARSC2015')
+flair.path <- system.file("BRAINIX/NIfTI/FLAIR.nii.gz", package = 'ENARSC2015')
+```
+
+Load the T1-w, T2-w, FLAIR as an antsImage.
+
+```{r read_imgs}
+t1 <- antsImageRead(t1.path, 3)
+t2 <- antsImageRead(t2.path, 3)
+flair <- antsImageRead(flair.path, 3)
+```
+
+Plot volumes
+---
+
+View the original T1, T2 and FLAIR volumes.
+
+```{r plot_imgs, fig.width= 10, fig.height = 3}
+par(mfrow = c(1,3))
+image(as.array(t1)[,,10], col = gray(0:64/64))
+image(as.array(t2)[,,10], col = gray(0:64/64))
+image(as.array(flair)[,,10], col = gray(0:64/64))
+```
+
+N3 Correction
+---
+
+Create volumes for the N3 corrected T1, T2 and FLAIR volumes.
+
+```{r clone_imgs}
+t1N3 <- antsImageClone(t1)
+t2N3 <- antsImageClone(t2)
+flairN3 <- antsImageClone(flair)
+```
+
+Perform the N3 bias feild correction on the T1, T2 and FLAIR volumes.
+
+```{r n3_correct}
+t1N3 = n3BiasFieldCorrection(t1, "4")
+t2N3 = n3BiasFieldCorrection(t2, "4")
+flairN3 = n3BiasFieldCorrection(flair, "4")
+```
+
+Write the N3 corrected files. 
+
+```{r antsWrite}
+antsImageWrite(t1N3, file.path(outdir, 'T1_ANTsR_N3Correct.nii.gz'))
+antsImageWrite(t2N3, file.path(outdir,'T2_ANTsR_N3Correct.nii.gz'))
+antsImageWrite(flairN3, file.path(outdir,'FLAIR_ANTsR_N3Correct.nii.gz'))
+```
+
+View the N3 bias feild correction on the T1, T2 and FLAIR volumes.
+
+```{r plot_n3_imgs, fig.width= 10, fig.height = 3}
+par(mfrow = c(1,3))
+image(as.array(t1N3)[,,10], col = gray(0:64/64))
+image(as.array(t2N3)[,,10], col = gray(0:64/64))
+image(as.array(flairN3)[,,10], col = gray(0:64/64))
+```
+
+Templates
+---
+
+Read the template with and without skull. 
+
+```{r read_template}
+template.path <- system.file("Template/MNI152_T1_1mm_brain.nii.gz", package = 'ENARSC2015')
+template.skull.path <- system.file("Template/MNI152_T1_1mm.nii.gz", package = 'ENARSC2015')
+template <- antsImageRead(template.path, 3)
+template.skull <- antsImageRead(template.skull.path, 3)
+```
+
+Plot the templates. 
+
+```{r plot_template,  fig.width= 6.5, fig.height = 3}
+par(mfrow = c(1,2))
+image(as.array(template)[,,90], col = gray(0:64/64))
+image(as.array(template.skull)[,,90], col = gray(0:64/64))
+```
+
+
+Registration  
+---
+
+First we will register the T1-w volume to the FLAIR volume. 
+
+```{r register_rigid}
+antsRegOut <- antsRegistration(fixed = flairN3, moving = t1N3 , typeofTransform = "Rigid",  outprefix = "./test")
+t1.to.flair <-antsImageClone(antsRegOut$warpedmovout)
+```
+
+
+Write the registered T1-w volume. 
+
+```{r write_rigid}
+antsImageWrite(t1.to.flair, file.path(outdir, 'T1_ANTsR_N3Correct_regFLAIR.nii.gz'))
+```
+
+Next we plot the registered FLAIR volume and the T1-w volume to visually assess the quality of the registration. 
+
+```{r plot_rigid, fig.width= 6.5, fig.height = 10}
+par(mfrow = c(3,2))
+slices <- c(5, 10, 15)
+for(i in slices){
+image(as.array(flairN3)[,,i], col = gray(0:64/64))
+image(as.array(t1.to.flair)[,,i], col = gray(0:64/64))
+}
+```
+
+Subtract the FLAIR and the T1-w images and plot the result.  
+
+```{r subtract_image}
+subtraction.image <- antsImageClone(flairN3)
+ImageMath( 3 , subtraction.image  , "-", flairN3 , t1.to.flair )
+image(as.array(subtraction.image)[,,10], col = gray(0:64/128))
+```
+
+Read in a region of interest (ROI).  In this case we have a brain mask of a manual segmentation of a brain tumor. 
+
+```{r roi_img}
+roi.path <- system.file("BRAINIX/NIfTI/ROI.nii.gz", package = 'ENARSC2015')
+roi <- antsImageRead(roi.path, 3)
+```
+
+Display the FLAIR and the ROI  
+
+```{r plot_roi}
+par(mfrow = c(1,2))
+image(as.array(flairN3)[,,15], col = gray(0:64/64))
+image(as.array(roi)[,,15], col = gray(0:64/64))
+```
+
+Perform a non-linear registration of the T1-w image to the MNI template with the skull.  Note that we remove the InverseWarp and Warp files generates by ANTsR, as these files are quite large. 
+
+```{r register_syn}
+outprefix = file.path(rootdir, "inst", 'ANTsR', "ants")
+antsRegOut.nonlin <- antsRegistration(fixed = template.skull, moving = t1.to.flair, typeofTransform = "SyN",  outprefix = outprefix)
+```
+
+```{r register_syn_out}
+print(antsRegOut.nonlin)
+```
+
+Extract the non-linear registration of the T1-w image to the MNI template with the skull.
+
+```{r clone_t1}
+t1.to.flair.to.template <-antsImageClone(antsRegOut.nonlin$warpedmovout)
+```
+
+Apply the registration transformation to the FLAIR and the ROI image. 
+
+```{r warp_flair} 
+flair.to.template <- antsApplyTransforms(fixed=template.skull , moving=flairN3 , transformlist=antsRegOut.nonlin$fwdtransforms , interpolator="Linear")
+roi.to.template <-antsApplyTransforms(fixed=template.skull , moving=roi , transformlist=antsRegOut.nonlin$fwdtransforms , interpolator="Linear")
+```
+
+Threshold the interpolated ROI image so that it is binary. 
+
+```{r warp_roi}
+roi.to.template.threshold <-antsImageClone(roi.to.template)
+ThresholdImage(3, roi.to.template, roi.to.template.threshold, .5, 1)
+```
+
+Plot the transformed FLAIR, thresheld ROI and template with skull. 
+
+```{r plot_warped_imgs, fig.width= 10, fig.height = 3}
+par(mfrow = c(1,3))
+image(as.array(flair.to.template)[,,110], col = gray(0:64/64))
+image(as.array(roi.to.template.threshold)[,,110], col = gray(0:64/64))
+image(as.array(template.skull)[,,110], col = gray(0:64/64))
+```
+
+Write the transformed FLAIR, ROI and  thresheld ROI.
+
+```{r write_warped_imgs}
+antsImageWrite(flair.to.template, file.path(outdir, 'FLAIR_ANTsR_N3Correct_regMNI_SyN.nii.gz'))
+antsImageWrite(roi.to.template , file.path(outdir, 'ROI_regMNI_SyN.nii.gz'))
+antsImageWrite(roi.to.template.threshold, file.path(outdir, 'ROI_threshold_regMNI_SyN.nii.gz'))
+```
+
+```{r remove_warp_img}
+file.remove(paste0(outprefix, "1InverseWarp.nii.gz" ) )
+file.remove(paste0(outprefix, "1Warp.nii.gz" ) )
+```
